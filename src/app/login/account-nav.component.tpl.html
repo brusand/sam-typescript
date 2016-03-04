@@ -1,0 +1,11 @@
+<ul class="nav navbar-nav navbar-right">
+  <cmn-i18n-select current="accountNav.locale.current" locales="accountNav.locale.availables"></cmn-i18n-select>
+  <li uib-dropdown ng-if="accountNav.loggedIn">
+    <a href uib-dropdown-toggle>
+      <span ng-bind="accountNav.username"></span> <span class="caret"></span>
+    </a>
+    <ul uib-dropdown-menu>
+      <li><a href ng-click="accountNav.logOut()"><i class="fa fa-sign-out"></i>  Log Out</a></li>
+    </ul>
+  </li>
+</ul>

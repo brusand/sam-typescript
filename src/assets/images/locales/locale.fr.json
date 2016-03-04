@@ -1,0 +1,42 @@
+{
+  "lora": {
+    "global": {
+      "title": "Low Power WAN",
+      "form": {
+        "error": {
+          "required": "ce champs ne doit pas être vide",
+          "email": "ce champs doit être une adresse mail",
+          "password": "the email or the password is invalid"
+        },
+        "email": {
+          "placeholder": "saisissez votre adresse e-mail"
+        },
+        "password": {
+          "placeholder": "saisissez votre mot de passe"
+        }
+      },
+      "table": {
+        "no-data": "Il n'y aucune donnée"
+      }
+    },
+    "home": {
+      "title": "Accueil"
+    },
+    "devices": {
+      "title": "Equipements",
+      "properties": {
+        "name": "Nom",
+        "status": "Statut",
+        "dev-eui": "DevEui",
+        "activation-mode": "Mode d'activation",
+        "class": "Classe",
+        "last-com": "Dernière comm."
+      }
+    },
+    "login": {
+      "log_in": "Connexion",
+      "sign_in": "S'enregistrer",
+      "description": "<p>Français</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec sodales nibh, sed pharetra arcu. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam porttitor auctor justo ac convallis.</p><p>Donec ultrices libero at enim efficitur vestibulum sed ac nisi. Vivamus eleifend in turpis eget blandit. Mauris eu ligula tincidunt, dictum leo nec, faucibus justo.</p>"
+    }
+  }
+}

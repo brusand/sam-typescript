@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "moment": "github:typings/typed-moment#a4075cd50e63efbedd850f654594f293ab81a385"
+  },
+  "devDependencies": {},
+  "ambientDependencies": {
+    "FileSaver": "github:DefinitelyTyped/DefinitelyTyped/FileSaver/FileSaver.d.ts#cf0a8f5d7054f667eb8549edd50ca7f1d18b8ca3",
+    "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#3bebbe1baee04846cc46ed7249e8117e4cd7c7ff",
+    "angular-animate": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-animate.d.ts#3c26c6546fab58b39d04d6ae40bacfa9a25dd196",
+    "angular-cookies": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-cookies.d.ts#ccd32787a2aed5f876693b2c8d7100d1daba4782",
+    "angular-sanitize": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-sanitize.d.ts#32194eaa6f9fd91364a8a18bc5591055e61f4bc5",
+    "angular-translate": "github:DefinitelyTyped/DefinitelyTyped/angular-translate/angular-translate.d.ts#19850bf86c876e0c2544842114878ece4664941a",
+    "angular-ui-bootstrap": "github:DefinitelyTyped/DefinitelyTyped/angular-ui-bootstrap/angular-ui-bootstrap.d.ts#f91384300695af40e9764ad907bcd24ea743cd91",
+    "angular-ui-router": "github:DefinitelyTyped/DefinitelyTyped/angular-ui-router/angular-ui-router.d.ts#655f8c1bf3c71b0e1ba415b36309604f79326ac8",
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#cf2a968f0edd7d30773f7d23fe3708fa029d5ab7",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#df712b17fa4737fdb3eb52118b1465cd3be81a1d",
+    "ng-table": "github:DefinitelyTyped/DefinitelyTyped/ng-table/ng-table.d.ts#fda3d9c587df3940304c9b68ea33d6c985ff0623",
+    "require": "github:DefinitelyTyped/DefinitelyTyped/requirejs/require.d.ts#853544cb7068af64bdb10ef1ae0c54d3aa3a80f6"
+  }
+}

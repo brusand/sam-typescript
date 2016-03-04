@@ -1,0 +1,116 @@
+//
+// Tables
+// --------------------------------------------------
+
+.table {
+  margin-bottom: 0;
+}
+
+th {
+  color: $table-header-color;
+  background-color: $table-header-bg;
+  font-weight: normal;
+}
+
+.table-select {
+  tbody {
+    tr {
+      cursor: pointer;
+    }
+  }
+
+  tr.row-default {
+    cursor: default;
+  }
+}
+
+.table-hover {
+  tr.row-default:hover {
+    background-color: $table-bg-accent;
+  }
+}
+
+.select-table {
+  padding: $table-cell-padding 0;
+  border: none;
+  background-color: $select-table-bg;
+
+  &:hover {
+    background-color: $select-table-bg-hover;
+  }
+}
+
+.pagination-table {
+
+  margin: 0;
+  border-radius: 0;
+  font-family: $headings-font-family;
+
+  > li {
+    > a {
+      background-color: $pagination-table-bg;
+      line-height: $line-height-base;
+      padding: $table-cell-padding;
+      border: none;
+      color: $pagination-table-color;
+    }
+
+    &:first-child {
+      > a,
+      > span {
+        @include border-left-radius(0);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        @include border-right-radius(0);
+      }
+    }
+  }
+
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      z-index: 2;
+      color: $pagination-table-hover-color;
+      background-color: $pagination-table-hover-bg;
+      border-color: $pagination-table-hover-border;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      z-index: 3;
+      color: $pagination-table-active-color;
+      background-color: $pagination-table-active-bg;
+      border-color: $pagination-table-active-border;
+      cursor: default;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: $pagination-table-disabled-color;
+      background-color: $pagination-table-disabled-bg;
+      border-color: $pagination-table-disabled-border;
+    }
+  }
+}
+
+.st-sort-ascent:before{
+  content: '\25B2';
+}
+
+.st-sort-descent:before{
+  content: '\25BC';
+}

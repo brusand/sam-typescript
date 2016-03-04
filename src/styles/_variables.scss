@@ -1,0 +1,239 @@
+/***** Bootstrap *****/
+
+$gray-darker: #333333;
+$gray-dark: #444444;
+$gray: #999999;
+$gray-light: #CCCCCC;
+$gray-lighter: #EEEEEE;
+$gray-lightest: #F6F6F6;
+
+$brand-primary: #FF7900;
+$brand-success: #32C832;
+$brand-info: #527EBD;
+$brand-warning: #FFCC00;
+$brand-danger: #DC3C17;
+
+$orange-yellow: #FFD200;
+$orange-blue: #4BB4E6;
+$orange-green: #50BE87;
+$orange-purple: #A885D8;
+$orange-pink: #FFB4E6;
+
+$headings-font-family: HelvNeue75, Arial, sans-serif;
+$font-family-sans-serif: HelvNeue55, Arial, sans-serif;
+$font-size-base: 14px;
+$font-letter-spacing: -20%;
+$font-weight-base: 700;
+
+$link-color: $brand-primary;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+$text-color: #000;
+$text-muted: $gray;
+$state-success-text: $brand-success;
+$state-info-text: $brand-info;
+$state-warning-text: $brand-warning;
+$state-danger-text: $brand-danger;
+
+$navbar-height: 100px;
+$navbar-width: 200px;
+$navbar-margin-bottom: 0;
+$navbar-font-size: 1.8rem;
+
+$grid-gutter-height: 30px;
+
+$content-padding-vertical: floor(($grid-gutter-height / 2));
+$padding-base-horizontal: 10px;
+$padding-base-vertical: 12px;
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-family: $headings-font-family;
+$btn-padding-horizontal: $padding-base-horizontal;
+$btn-padding-vertical: $padding-base-vertical;
+
+$btn-disabled-color: $gray-light;
+$btn-disabled-bg: transparent;
+$btn-disabled-border: $gray-light;
+
+$btn-hover-color: #fff;
+$btn-hover-bg: #000;
+$btn-hover-border: #000;
+
+$btn-focus-color: #fff;
+$btn-focus-bg: $brand-primary;
+$btn-focus-border: $brand-primary;
+
+$btn-default-color: #000;
+$btn-default-bg: transparent;
+$btn-default-border: #000;
+
+$btn-inverse-color: #FFF;
+$btn-inverse-bg: transparent;
+$btn-inverse-border: #FFF;
+
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: darken($btn-primary-bg, 5%);
+
+$btn-success-color: #fff;
+$btn-success-bg: $brand-success;
+$btn-success-border: $brand-success;
+
+$btn-info-color: #fff;
+$btn-info-bg: $brand-info;
+$btn-info-border: $brand-info;
+
+$btn-warning-color: #fff;
+$btn-warning-bg: $brand-warning;
+$btn-warning-border: $brand-warning;
+
+$btn-danger-color: #fff;
+$btn-danger-bg: $brand-danger;
+$btn-danger-border: $brand-danger;
+
+$btn-link-disabled-color: $gray-light;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base: 0;
+$btn-border-radius-large: 0;
+$btn-border-radius-small: 0;
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+$input-bg: transparent !important;
+//** `<input disabled>` background color
+$input-bg-disabled: transparent;
+
+//** Text color for `<input>`s
+$input-color: #000;
+$input-color-disabled: $gray-light;
+//** `<input>` border color
+$input-border: $gray-dark;
+$input-border-hover: #000;
+
+// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
+//** Default `.form-control` border radius
+// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+$input-border-radius: 0;
+//** Large `.form-control` border radius
+$input-border-radius-large: 0;
+//** Small `.form-control` border radius
+$input-border-radius-small: 0;
+
+//** Border color for inputs on focus
+$input-border-focus: $brand-primary;
+
+//** Placeholder text color
+$input-color-placeholder: $gray-light;
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Default background color used for all tables.
+$table-bg: transparent;
+//** Background color used for `.table-striped`.
+$table-bg-accent: $gray-lightest;
+//** Background color used for `.table-hover`.
+$table-bg-hover: $gray-lighter;
+$table-bg-active: lighten($orange-purple, 20%);
+
+$table-header-color: #FFF;
+$table-header-bg: $gray-dark;
+
+$table-border-color: transparent;
+
+//== Pagination
+//
+//##
+
+$pagination-table-color: $text-color;
+$pagination-table-bg: transparent;
+$pagination-table-border: #ddd;
+
+$pagination-table-hover-color: $text-color;
+$pagination-table-hover-bg: $gray-lighter;
+$pagination-table-hover-border: $gray-lighter;
+
+$pagination-table-active-color: $brand-primary;
+$pagination-table-active-bg: $gray-lighter;
+$pagination-table-active-border: $gray-lighter;
+
+$pagination-table-disabled-color: $gray;
+$pagination-table-disabled-bg: transparent;
+$pagination-table-disabled-border: #ddd;
+
+//== Select
+//
+//##
+
+$select-table-bg: $gray-light;
+$select-table-bg-hover: $gray-lighter;
+
+/***** Orange *****/
+
+// PRIMARY BAR
+$navbar-orange-color: $brand-primary;
+$navbar-orange-bg: #000;
+$navbar-orange-border: #000;
+$navbar-orange-font-family: $headings-font-family;
+$navbar-orange-font-size: 18px;
+$navbar-orange-line-height: $navbar-orange-font-size;
+
+// Navbar links
+$navbar-orange-link-color: #FFF;
+$navbar-orange-link-hover-color: $brand-primary;
+$navbar-orange-link-hover-bg: transparent;
+$navbar-orange-link-active-color: $brand-primary;
+$navbar-orange-link-active-bg: transparent;
+$navbar-orange-link-disabled-color: #ccc;
+$navbar-orange-link-disabled-bg: transparent;
+
+// Navbar brand label
+$navbar-orange-brand-color: #FFF;
+$navbar-orange-brand-hover-color: #FFF;
+$navbar-orange-brand-hover-bg: transparent;
+
+// Navbar toggle
+$navbar-orange-toggle-hover-bg: #ddd;
+$navbar-orange-toggle-icon-bar-bg: #888;
+$navbar-orange-toggle-border-color: #ddd;
+
+// SECONDARY BAR
+$navbar-orange-secondary-color: $brand-primary;
+$navbar-orange-secondary-bg: $orange-blue;
+$navbar-orange-secondary-border: #000;
+$navbar-orange-secondary-font-family: $headings-font-family;
+$navbar-orange-secondary-font-size: 18px;
+$navbar-orange-secondary-line-height: $navbar-orange-secondary-font-size;
+
+// Navbar links
+$navbar-orange-secondary-link-color: #FFF;
+$navbar-orange-secondary-link-hover-color: #000;
+$navbar-orange-secondary-link-hover-bg: transparent;
+$navbar-orange-secondary-link-active-color: #000;
+$navbar-orange-secondary-link-active-bg: transparent;
+$navbar-orange-secondary-link-disabled-color: #ccc;
+$navbar-orange-secondary-link-disabled-bg: transparent;
+
+// Navbar brand label
+$navbar-orange-secondary-brand-color: #FFF;
+$navbar-orange-secondary-brand-hover-color: #FFF;
+$navbar-orange-secondary-brand-hover-bg: transparent;
+
+// Navbar toggle
+$navbar-orange-secondary-toggle-hover-bg: #ddd;
+$navbar-orange-secondary-toggle-icon-bar-bg: #888;
+$navbar-orange-secondary-toggle-border-color: #ddd;
+
+$orange-logo-height: 50px;
+$orange-logo-margin: $orange-logo-height/2;
+
+$btn-font-weight: $font-weight-base;

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  },
+  "filesGlob": [
+    "./src/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "typings/main.d.ts",
+    "typings/main"
+  ],
+  "compileOnSave": true,
+  "buildOnSave": true,
+  "files": [
+    "./src/app/app.config.ts",
+    "./src/app/app.module.ts",
+    "./src/app/core/core.module.ts",
+    "./src/config.ts",
+    "./src/index.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}

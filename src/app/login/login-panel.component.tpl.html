@@ -1,0 +1,26 @@
+<div>
+  <form name="loginForm">
+    <fieldset ng-disabled="loginPanel.loading">
+      <div class="form-group" ng-class="{'has-error': loginForm.email.$dirty && loginForm.email.$invalid}">
+        <input name="email" type="email" class="form-control" ng-model="loginPanel.email"
+               placeholder="{{'lora.global.form.email.placeholder' | translate}}" required>
+        <div ng-if="loginForm.email.$dirty" ng-messages="loginForm.email.$error">
+          <p class="help-block" ng-message="required"><span translate>lora.global.form.error.required</span></p>
+          <p class="help-block" ng-message="email"><span translate>lora.global.form.error.email</span></p>
+        </div>
+      </div>
+      <div class="form-group" ng-class="{'has-error': loginForm.password.$dirty && loginForm.password.$invalid}">
+        <input name="password" type="password" class="form-control" ng-model="loginPanel.password"
+               placeholder="{{'lora.global.form.password.placeholder' | translate}}" required>
+        <div ng-if="loginForm.password.$dirty" ng-messages="loginForm.password.$error">
+          <p class="help-block" ng-message="required"><span translate>lora.global.form.error.required</span></p>
+        </div>
+      </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary" ng-click="loginPanel.logIn(loginPanel.email, loginPanel.password)"
+            ng-disabled="loginForm.$invalid || loginPanel.loading"
+            cmn-loading="loginPanel.loading" icon="fa-sign-in">{{'lora.login.log_in' | translate}}
+    </button>
+    <span class="text-danger text-btn pull-right" ng-if="loginPanel.serverError"><span translate>lora.global.form.error.password</span></span>
+  </form>
+</div>

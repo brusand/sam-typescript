@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'HelvNeue75';
+  font-style: normal;
+  font-weight: 700;
+  src: url("#{$orange-font-path}HelvNeue75_W1G.eot");
+  src: url("#{$orange-font-path}HelvNeue75_W1G.eot?#iefix") format('embedded-opentype'),
+  url("#{$orange-font-path}HelvNeue75_W1G.woff2") format("woff2"),
+  url("#{$orange-font-path}HelvNeue75_W1G.woff") format("woff"),
+  url("#{$orange-font-path}HelvNeue75_W1G.ttf") format("truetype"),
+  url("#{$orange-font-path}HelvNeue75_W1G.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'HelvNeue55';
+  font-style: normal;
+  font-weight: 400;
+  src: url("#{$orange-font-path}HelvNeue55_W1G.eot");
+  src: url("#{$orange-font-path}HelvNeue55_W1G.eot?#iefix") format('embedded-opentype'),
+  url("#{$orange-font-path}HelvNeue55_W1G.woff2") format("woff2"),
+  url("#{$orange-font-path}HelvNeue55_W1G.woff") format("woff"),
+  url("#{$orange-font-path}HelvNeue55_W1G.ttf") format("truetype"),
+  url("#{$orange-font-path}HelvNeue55_W1G.svg") format("svg");
+}
+
+body {
+  letter-spacing: $font-letter-spacing;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 2);
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 2);
+}
+
+.text-input {
+   line-height: $input-height-base;
+ }
+
+.text-btn {
+  line-height: $font-size-base + $btn-padding-vertical*2;
+}
+
+
+@include text-emphasis-variant('.text-black', #000);
+
+@include text-emphasis-variant('.text-purple', $orange-purple);
+
+@include text-emphasis-variant('.text-green', $orange-green);
+
+@include text-emphasis-variant('.text-blue', $orange-blue);
+
+@include text-emphasis-variant('.text-yellow', $orange-yellow);
+
+@include text-emphasis-variant('.text-pink', $orange-pink);

@@ -1,0 +1,11 @@
+{
+  "lora": {
+    "global": {
+      "title": "LPWA",
+      "locale": {
+        "en": "EN",
+        "fr": "FR"
+      }
+    }
+  }
+}

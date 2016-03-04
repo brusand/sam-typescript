@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.orange.iaes</groupId>
+        <artifactId>iaes-web</artifactId>
+        <version>0.17.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>iaes-web-lom-portal</artifactId>
+    <name>IAES :: Web - LOM  portal (HTML/JavaScript)</name>
+    <packaging>pom</packaging>
+
+    <profiles>
+
+        <!-- profile disbaled by default, that build the Javascript portal using Grunt (NodeJS) -->
+        <profile>
+            <id>web-dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <!-- Package as an executable jar -->
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.github.eirslett</groupId>
+                        <artifactId>frontend-maven-plugin</artifactId>
+                        <version>0.0.26</version>
+
+                        <executions>
+                            <execution>
+                                <id>install node and npm</id>
+                                <goals>
+                                    <goal>install-node-and-npm</goal>
+                                </goals>
+                                <phase>generate-resources</phase>
+                                <configuration>
+                                    <nodeVersion>v5.1.0</nodeVersion>
+                                    <npmVersion>3.3.12</npmVersion>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>npm install</id>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <phase>generate-resources</phase>
+                            </execution>
+                            <execution>
+                                <id>npm build</id>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <phase>compile</phase>
+                                <configuration>
+                                    <!-- optional: if not specified, it will run webpack's default
+                                    build (and you can remove this whole <configuration> section.) -->
+                                    <arguments>run build:dev</arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+    </profiles>
+
+</project>

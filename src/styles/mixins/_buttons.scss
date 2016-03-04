@@ -1,0 +1,82 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant($color, $background, $border,
+  $color-hover: $color,
+  $color-focus: $color,
+  $color-active: $color,
+  $color-disabled: $color,
+  $background-hover: darken($border, 10%),
+  $background-focus: darken($border, 17%),
+  $background-active: darken($border, 10%),
+  $background-disabled: $background,
+  $border-hover: darken($border, 12%),
+  $border-focus: darken($border, 25%),
+  $border-active: darken($border, 12%),
+  $border-disabled: $border) {
+
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus, &:focus .fa,
+  &.focus, &.focus .fa {
+    color: $color-focus;
+    background-color: $background-focus;
+    border-color: $border-focus;
+  }
+  &:hover {
+    color: $color-hover;
+    background-color: $background-hover;
+    border-color: $border-hover;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color-active;
+    background-color: $background-active;
+    border-color: $border-active;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color-focus;
+      background-color: $background-focus;
+      border-color: $border-focus;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color-disabled;
+      background-color: $background-disabled;
+      border-color: $border-disabled;
+    }
+    color: $color-disabled;
+    background-color: $background-disabled;
+    border-color: $border-disabled;
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}

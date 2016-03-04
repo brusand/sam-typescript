@@ -1,0 +1,9 @@
+target/*
+bower_components/*
+dist/*
+node/*
+node_modules/*
+./tmp/*
+src1/*
+build/*
+typings/*

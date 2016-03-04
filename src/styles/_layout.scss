@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+}
+
+
+.wrapper {
+  min-height: 100%;
+}
+
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-flex-column {
+  flex-direction: column;
+  display: flex;
+}
+
+.content-flex {
+  flex: 1;
+}
+
+.full-height {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.no-p {
+  padding: 0;
+}
+
+.container-fluid.no-p > .row {
+  margin: 0;
+}
+
+.content {
+  padding-top: $content-padding-vertical;
+  padding-bottom: $content-padding-vertical;
+}
+
+.content-white {
+  background-color: #FFF;
+}
+
+.content-black {
+  background-color: #000;
+}
+
+.content-gray {
+  background-color: $gray-dark;
+}
+
+.content-light-gray {
+  background-color: $gray-light;
+}
+
+.content-yellow {
+  background-color: $orange-yellow;
+}
+
+.content-blue {
+  background-color: $orange-blue;
+}
+
+.content-green {
+  background-color: $orange-green;
+}
+
+.content-purple {
+  background-color: $orange-purple;
+}
+
+.content-pink {
+  background-color: $orange-pink;
+}

@@ -1,0 +1,5 @@
+{
+ "httpProxy": "http://p-goodway.rd.Francetelecom.fr:3128",
+ "httpsProxy": "http://p-goodway.rd.francetelecom.fr:3128"
+
+}
