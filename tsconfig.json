@@ -16,15 +16,10 @@
     "typings/main"
   ],
   "compileOnSave": true,
-  "buildOnSave": true,
+  "buildOnSave": false,
   "files": [
-    "./src/app/app.config.ts",
-    "./src/app/app.module.ts",
-    "./src/app/core/core.module.ts",
-    "./src/config.ts",
-    "./src/index.ts"
-  ],
-  "atom": {
-    "rewriteTsconfig": true
-  }
+    "./typings/browser.d.ts",  
+    "./src/**/*.ts"  
+
+  ]
 }
