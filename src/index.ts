@@ -1,5 +1,3 @@
-/// <reference path="../typings/browser.d.ts" />
-
 import 'angular';
 import 'angular-animate';
 import 'angular-cookies';

@@ -38,10 +38,13 @@ export class BaseDirective implements ng.IDirective {
     public templateUrl : string;
     public template : string;
         
-    public controller : (...args: any[]) => void; 
+    public controller : any; 
     public link : (scope : IBaseDirectiveScope, element : ng.IAugmentedJQuery, attrs : any, controllers : any, transclusionFn?:any) => void;
-    public compile: (element : ng.IAugmentedJQuery, attrs : any) => void;
-        
+    //public compile: (element : ng.IAugmentedJQuery, attrs : any) => void;
+    //static $inject = ["$compile"];
+
+    // $compile can then be used as this.$compile
+    
     constructor () {
         this.priority = 0;
         this.restrict = "EAC";
@@ -49,7 +52,17 @@ export class BaseDirective implements ng.IDirective {
         this.replace = false;
     }
 
-        
+    public static Factory()
+    {
+        var directive = () =>
+        {
+            return new BaseDirective();
+        };
+
+        directive['$inject'] = ['$compile'];
+
+        return directive;
+    }        
 }
 export const COMMON_DIRECTIVE_MODULE: ng.IModule = angular.module(COMMON_DIRECTIVE_MODULE_NAME, [])
-  .directive('baseDirective', BaseDirective);
+  .directive('baseDirective', () => new BaseDirective());

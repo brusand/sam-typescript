@@ -10,12 +10,7 @@
     "./src/**/*.ts",
     "!./node_modules/**/*.ts"
   ],
-  "exclude": [
-    "node_modules",
-    "typings/main.d.ts",
-    "typings/main"
-  ],
-  "compileOnSave": true,
+  "compileOnSave": false,
   "buildOnSave": false,
   "files": [
     "./typings/browser.d.ts",  
