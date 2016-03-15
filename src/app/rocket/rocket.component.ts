@@ -6,20 +6,7 @@ import {RocketState} from './rocket.state';
 import {RocketViews} from './rocket.views';
 import {Sam} from '../sam/sam.component';
 
-export class RocketSam extends Sam<RocketActions, RocketModel, RocketState, RocketViews> {
-   
-    //sam = new Sam<RocketActions, RocketModel, RocketState, RocketViews>(RocketAction, new RocketModel(), new RocketState(), new RocketViews());
-  
-    static $inject = ['$http', '$scope'];
-
-    constructor($http, $scope)
-    {
-       super(RocketActions, RocketModel, RocketState, RocketViews);
-       
-    }
-    
-}
-class RocketController extends Sam<RocketActions, RocketModel, RocketState, RocketViews>  {
+export class RocketController extends Sam<RocketActions, RocketModel, RocketState, RocketViews>  {
 
     /* @ngInject */
     static $inject = ['$http', '$scope', '$timeout'];
@@ -31,20 +18,7 @@ class RocketController extends Sam<RocketActions, RocketModel, RocketState, Rock
        $scope.rocket = this;
        this.actions.init($timeout);
        
-    }
-
-    
-}
-
-export class RocketSamController  extends RocketSam {
- 
-    static $inject = ['$http', '$scope'];
-    constructor($http, $scope)
-    {
-       super($http, $scope);
-       
-    }
- 
+    };
 }
 
 
