@@ -64,5 +64,5 @@ export class BaseDirective implements ng.IDirective {
         return directive;
     }        
 }
-export const COMMON_DIRECTIVE_MODULE: ng.IModule = angular.module(COMMON_DIRECTIVE_MODULE_NAME, [])
-  .directive('baseDirective', () => new BaseDirective());
+//export const COMMON_DIRECTIVE_MODULE: ng.IModule = angular.module(COMMON_DIRECTIVE_MODULE_NAME, [])
+//  .directive('baseDirective', () => new BaseDirective());

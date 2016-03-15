@@ -23,3 +23,4 @@ import {APP_MODULE} from './app/app.module';
 angular.element(document).ready(function() {
     angular.bootstrap(document, [APP_MODULE.name], {strictDi: true});
 });
+   

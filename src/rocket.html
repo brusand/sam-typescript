@@ -17,7 +17,7 @@
                     launched: false, 
                     aborted: false
                     },
-       this.model.present=function(data) {
+    this.model.present=function(data) {
                 if ($scope.vm.model.state.counting($scope.vm.model)) {
                     if ($scope.vm.model.counter === 0) {
                         $scope.vm.model.launched = data.launched || false ;
@@ -31,7 +31,7 @@
                     }
                 }
                 $scope.vm.model.state.render($scope.vm.model) ;
-       };
+    };
        
             this.view = {} ;
 
@@ -251,13 +251,13 @@
            $scope.$watch( 'representation', function ( tpl ) {
                 if ( angular.isDefined( tpl ) ) {
                 // compile the provided template against the current scope
-                el = $compile( tpl )( $scope );
+                    el = $compile( tpl )( $scope );
 
-                // stupid way of emptying the element
-                $element.html("");
+                    // stupid way of emptying the element
+                    $element.html("");
 
-                // add the template content
-                $element.append( el );
+                    // add the template content
+                    $element.append( el );
                 }
             });
             
