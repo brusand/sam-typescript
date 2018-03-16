@@ -1,7 +1,7 @@
 {
     "lora.global.title": "Low Power WAN fr",
-    "lora.global.form.error.required": "ce champs doit être une adresse mail",
-    "lora.global.form.error.email": "ce champs doit être une adresse mail",
+    "lora.global.form.error.required": "ce champs doit être une adresse mail fr",
+    "lora.global.form.error.email": "ce champs doit être une adresse mail fr",
     "lora.global.form.error.password": "the email or the password is invalid",
     "lora.global.form.email.placeholder": "saisissez votre adresse e-mail",
     "lora.global.form.password.placeholder": "saisissez votre mot de passe",
