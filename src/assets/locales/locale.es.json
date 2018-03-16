@@ -1,4 +1,7 @@
 {
     "lora.global.title": "low power WAN",
-    "lora.global.table.no-data": "no data sp"
+    "lora.global.table.no-data": "no data sp",
+    "lora.global.form.error.required": "this field must not be empty sp",
+    "lora.global.form.error.email": "this field must be an email sp",
+    "lora.global.table.delete": "delete sp"
 }
