@@ -7,5 +7,7 @@
     "lora.global.form.error.password": "adresse mail ou mot de passe invalide sp",
     "lora.global.form.email.placeholder": "enter your email sp",
     "lora.global.form.password.placeholder": "enter your email sp",
-    "lora.global.table.deactivate": "Deactivate sp"
+    "lora.global.table.deactivate": "Deactivate sp",
+    "lora.global.table.activate": "Activate sp",
+    "lora.global.table.export-csv": "Generate sv"
 }
