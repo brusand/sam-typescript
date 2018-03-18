@@ -1,1 +1,12 @@
-{}
+{
+    "lora": {
+        "global": {
+            "title": "Low Power WAN da",
+            "form": {
+                "error": {
+                    "required": "this field must not be empty da"
+                }
+            }
+        }
+    }
+}
